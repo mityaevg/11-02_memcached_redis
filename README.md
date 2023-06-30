@@ -63,3 +63,15 @@ systemctl status redis.service
 ```
 redis-cli
 ```
+Создадим и просмотрим созданные ключи в базе данных:
+
+```
+127.0.0.1:6379> set key1 key1 EX 120
+127.0.0.1:6379> get key1
+127.0.0.1:6379> set key2 hw_11-02_task4 EX 240
+127.0.0.1:6379> get key2
+127.0.0.1:6379> set key3 30/06/2023 EX 180
+127.0.0.1:6379> get key3
+```
+
+<kbd>![](img/redis_cli_key_creation_deletion.png)</kbd>
