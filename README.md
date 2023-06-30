@@ -34,6 +34,17 @@ systemctl status memcached.service
 
 ### Задание 3. Удаление по TTL в Memcached.
 
+```
+telnet localhost 11211
+add key1 0 5 4
+key1
+add key2 0 5 4
+key2
+add key3 0 5 4
+key3
+```
+Выяснить, как можно получить логи, в которых будет отражаться время создания и удаления ключей
+
 
 
 
