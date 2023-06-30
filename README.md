@@ -54,4 +54,12 @@ key3
 ### Задание 3. Запись данных в Redis.
 
 Запишите в **Redis** несколько ключей с любыми именами и значениями:
+```
+sudo apt update && sudo apt install redis
+systemctl status redis.service
+```
+<kbd>![](img/redis_service_status.png)</kbd>
 
+```
+redis-cli
+```
